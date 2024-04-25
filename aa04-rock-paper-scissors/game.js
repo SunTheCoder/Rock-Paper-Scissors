@@ -157,7 +157,7 @@ function getCPUMove() {
 
 function processMove(cmd, cpu) {
   const result = getWinner(cmd, cpu);
-  console.log(`You pick ${VALID_MOVES[cmd].name}, computer picks ${VALID_MOVES[cpu].name}.`);
+  console.log(`You pick ${cmd}, computer picks ${cpu}.`);
 
   if (result === 0) {
     console.log("You tie.\n");
